@@ -31,7 +31,6 @@
             <preference name="xwalkCommandLine" value="$XWALK_COMMANDLINE"/>
             <preference name="xwalkMode" value="$XWALK_MODE" />
             <preference name="xwalkMultipleApk" value="$XWALK_MULTIPLEAPK" />
-            <preference name="android-minSdkVersion" value="16" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/*">

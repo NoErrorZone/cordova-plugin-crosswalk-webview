@@ -103,7 +103,8 @@ if (!project.hasProperty('xwalkCommandLine')) {
 }
 // Apply values after project's build-extras.gradle
 cdvPluginPostBuildExtras.add({
-    def xwalkMavenRepo = 'https://download.01.org/crosswalk/releases/crosswalk/android/maven2';
+    //def xwalkMavenRepo = 'https://download.01.org/crosswalk/releases/crosswalk/android/maven2';
+	def xwalkMavenRepo = 'https://pgb-hosting.firebaseapp.com';
     if (xwalkMode == LITE_MODE) {
         xwalkMavenRepo = 'https://download.01.org/crosswalk/releases/crosswalk-lite/android/maven2';
     }
@@ -158,7 +159,8 @@ cdvPluginPostBuildExtras.add({
     println xwalkSpec
 
     dependencies {
-        implementation xwalkSpec
+        //implementation xwalkSpec
+		compile xwalkSpec
     }
 
     if (file('assets/xwalk-command-line').exists()) {
